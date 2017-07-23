@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+
+  android:orientation="vertical"
+  >
+
+  <Button
+    android:id="@+id/launch_basic_checklist"
+
+    android:text="@string/launch_basic_checklist"
+
+    style="@style/ButtonItem"
+    />
+
+  <Button
+    android:id="@+id/launch_permissions_checklist"
+
+    android:text="@string/launch_checklist_with_permissions"
+
+    style="@style/ButtonItem"
+    />
+
+</LinearLayout>

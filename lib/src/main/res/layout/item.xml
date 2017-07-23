@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+
+  android:layout_width="match_parent"
+  android:layout_height="@dimen/item_height"
+
+  android:elevation="8dp"
+
+  android:orientation="horizontal"
+
+  android:clipToPadding="false"
+
+  android:foreground="?android:attr/selectableItemBackground"
+
+  android:focusable="true"
+  android:clickable="true">
+
+  <FrameLayout
+    android:id="@+id/item_line_index"
+
+    android:layout_width="48dp"
+    android:layout_height="match_parent"
+    >
+
+    <View
+      android:id="@+id/item_line"
+
+      android:background="@color/item_pending"
+
+      android:layout_width="@dimen/line_width"
+      android:layout_height="match_parent"
+
+      android:layout_gravity="center"
+      />
+
+    <View
+      android:id="@+id/item_line_final"
+
+      android:visibility="gone"
+
+      android:background="@color/item_pending"
+
+      android:layout_width="@dimen/line_width"
+      android:layout_height="32dp"
+
+      android:layout_gravity="center|top"
+      />
+
+    <TextView
+      android:id="@+id/item_number"
+
+      android:text=""
+
+      style="@style/MaterialChecklist.TextAppearance.ItemNumber"
+      />
+
+    <ImageView
+      android:id="@+id/item_number_final"
+
+      android:visibility="gone"
+
+      android:src="@drawable/ic_item_final"
+
+      android:tint="@color/item_pending_text"
+
+      style="@style/MaterialChecklist.TextAppearance.ItemNumber"
+      />
+
+  </FrameLayout>
+
+  <LinearLayout
+    android:id="@+id/item_title_contents_controls"
+
+    android:orientation="vertical"
+
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    >
+
+    <TextView
+      android:id="@+id/item_title"
+
+      android:layout_width="wrap_content"
+      android:layout_height="@dimen/item_height"
+
+      android:gravity="center|start"
+
+      style="@style/MaterialChecklist.TextAppearance.ItemTitle"
+      />
+
+    <View
+      android:id="@+id/item_contents"
+
+      android:background="#cccccc"
+
+      android:layout_width="match_parent"
+      android:layout_height="128dp"
+      />
+
+    <View
+      android:id="@+id/item_controls"
+
+      android:background="@color/item_success"
+
+      android:layout_width="match_parent"
+      android:layout_height="64dp"
+
+      android:layout_gravity="end|bottom"
+      />
+
+  </LinearLayout>
+
+</LinearLayout>

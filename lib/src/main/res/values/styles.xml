@@ -1,0 +1,35 @@
+<resources>
+
+  <!-- Base application theme. -->
+  <style name="MaterialChecklistTheme" parent="android:Theme.Material.Light.NoActionBar">
+    <item name="android:windowBackground">@color/background</item>
+
+    <item name="android:colorPrimary">@color/primary</item>
+    <item name="android:colorPrimaryDark">@color/primary_dark</item>
+    <item name="android:colorAccent">@color/accent</item>
+    
+    <item name="android:statusBarColor">@color/statusbar</item>
+  </style>
+
+  <style name="MaterialChecklist.TextAppearance.ItemTitle" parent="@android:style/TextAppearance.Material">
+    <item name="android:textSize">@dimen/item_title_text_size</item>
+    <item name="android:fontFamily">sans-serif-medium</item>
+    <item name="android:textColor">@color/text_primary</item>
+  </style>
+
+  <style name="MaterialChecklist.TextAppearance.ItemNumber" parent="@android:style/TextAppearance.Material">
+    <item name="android:layout_width">@dimen/item_number_size</item>
+    <item name="android:layout_height">@dimen/item_number_size</item>
+
+    <item name="android:background">@drawable/item_number_background</item>
+    <item name="android:gravity">center</item>
+    <item name="android:layout_gravity">center|top</item>
+    <item name="android:layout_marginTop">@dimen/item_number_margin_top</item>
+
+    <item name="android:textSize">@dimen/item_number_text_size</item>
+    <item name="android:fontFamily">sans-serif</item>
+    <item name="android:textStyle">bold</item>
+    <item name="android:textColor">@color/item_pending_text</item>
+  </style>
+
+</resources>

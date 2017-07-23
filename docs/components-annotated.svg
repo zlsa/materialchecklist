@@ -1,0 +1,524 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1440"
+   height="1440"
+   viewBox="0 0 1440 1440"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.92.1 r"
+   sodipodi:docname="components-annotated.svg"
+   inkscape:export-filename="/home/zlsa/projects/android/materialchecklist/docs/components.png"
+   inkscape:export-xdpi="192"
+   inkscape:export-ydpi="192">
+  <defs
+     id="defs4">
+    <linearGradient
+       id="linearGradient4486"
+       inkscape:collect="always">
+      <stop
+         id="stop4488"
+         offset="0"
+         style="stop-color:#000000;stop-opacity:1" />
+      <stop
+         id="stop4490"
+         offset="1"
+         style="stop-color:#000000;stop-opacity:0" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4486"
+       id="linearGradient4484"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0,-0.250000000672736,-0.250000000672736,0,648.0000017437313,1220.362215064231)"
+       x1="864"
+       y1="1644"
+       x2="951"
+       y2="1644" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="1"
+     inkscape:pageshadow="2"
+     inkscape:zoom="2.828427122507615"
+     inkscape:cx="443.2890414203774"
+     inkscape:cy="811.6180510064996"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer7"
+     showgrid="true"
+     units="px"
+     inkscape:window-width="1600"
+     inkscape:window-height="862"
+     inkscape:window-x="0"
+     inkscape:window-y="18"
+     inkscape:window-maximized="0"
+     inkscape:object-nodes="true"
+     inkscape:snap-smooth-nodes="true"
+     showguides="false"
+     inkscape:guide-bbox="true"
+     inkscape:snap-text-baseline="true"
+     inkscape:snap-global="true"
+     showborder="true"
+     inkscape:snap-page="true"
+     width="1080px">
+    <inkscape:grid
+       type="xygrid"
+       id="grid3355"
+       empspacing="1000000"
+       spacingx="3"
+       spacingy="3"
+       color="#2b28f3"
+       opacity="0.1254902"
+       empcolor="#ff91c2"
+       empopacity="0.25098039"
+       snapvisiblegridlinesonly="true"
+       dotted="true"
+       enabled="false" />
+    <inkscape:grid
+       type="xygrid"
+       id="grid3357"
+       empspacing="8"
+       spacingx="1"
+       spacingy="1"
+       color="#70b4ff"
+       opacity="0.1254902"
+       enabled="false"
+       dotted="true"
+       empcolor="#3492fc"
+       empopacity="0.0941176471" />
+    <inkscape:grid
+       type="xygrid"
+       id="grid4292"
+       spacingx="1"
+       spacingy="1"
+       empspacing="8"
+       color="#000000"
+       opacity="0.0470588235"
+       empcolor="#000000"
+       empopacity="0.0941176471" />
+    <sodipodi:guide
+       position="720,976"
+       orientation="1,0"
+       id="guide1150"
+       inkscape:locked="false"
+       inkscape:label=""
+       inkscape:color="rgb(0,0,255)" />
+    <sodipodi:guide
+       position="1040,976"
+       orientation="1,0"
+       id="guide1152"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="400,976"
+       orientation="1,0"
+       id="guide1154"
+       inkscape:locked="false" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:groupmode="layer"
+     id="layer6"
+     inkscape:label="screenshot"
+     transform="translate(0,960)" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer7"
+     inkscape:label="annotation"
+     transform="translate(0,960)">
+    <image
+       sodipodi:absref="/home/zlsa/projects/android/materialchecklist/docs/components.png"
+       xlink:href="components.png"
+       width="540"
+       height="960"
+       preserveAspectRatio="none"
+       id="image1825"
+       x="450"
+       y="-960" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;line-height:30px;font-family:Roboto;-inkscape-font-specification:Roboto;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#4caf50;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="1040"
+       y="-872"
+       id="text1830"><tspan
+         sodipodi:role="line"
+         id="tspan1828"
+         x="1040"
+         y="-872"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:24px;font-family:'Roboto Mono';-inkscape-font-specification:'Roboto Mono Bold';fill:#4caf50;fill-opacity:1">TITLE</tspan></text>
+    <text
+       id="text1996"
+       y="-736"
+       x="1040"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;line-height:30px;font-family:Roboto;-inkscape-font-specification:Roboto;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#4caf50;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:24px;font-family:'Roboto Mono';-inkscape-font-specification:'Roboto Mono Bold';fill:#4caf50;fill-opacity:1"
+         y="-736"
+         x="1040"
+         id="tspan1994"
+         sodipodi:role="line">CONTENT</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;line-height:30px;font-family:Roboto;-inkscape-font-specification:Roboto;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#4caf50;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="1040"
+       y="-640"
+       id="text2000"><tspan
+         sodipodi:role="line"
+         id="tspan1998"
+         x="1040"
+         y="-640"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:24px;font-family:'Roboto Mono';-inkscape-font-specification:'Roboto Mono Bold';fill:#4caf50;fill-opacity:1">CONTROLS</tspan></text>
+    <text
+       id="text1158"
+       y="-872"
+       x="400"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;line-height:30px;font-family:Roboto;-inkscape-font-specification:Roboto;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#4caf50;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:24px;font-family:'Roboto Mono';-inkscape-font-specification:'Roboto Mono Bold';text-align:end;text-anchor:end;fill:#4caf50;fill-opacity:1"
+         y="-872"
+         x="400"
+         id="tspan1156"
+         sodipodi:role="line">INDEX</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;line-height:30px;font-family:Roboto;-inkscape-font-specification:Roboto;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#4caf50;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="400"
+       y="-360"
+       id="text1162"><tspan
+         sodipodi:role="line"
+         id="tspan1160"
+         x="400"
+         y="-360"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:24px;font-family:'Roboto Mono';-inkscape-font-specification:'Roboto Mono Bold';text-align:end;text-anchor:end;fill:#4caf50;fill-opacity:1">FINAL ITEM</tspan></text>
+    <text
+       id="text1166"
+       y="-336"
+       x="400"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;line-height:30px;font-family:Roboto;-inkscape-font-specification:Roboto;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#4caf50;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16px;font-family:'Roboto Mono';-inkscape-font-specification:'Roboto Mono Bold';text-align:end;text-anchor:end;fill:#404040;fill-opacity:1"
+         y="-336"
+         x="400"
+         id="tspan1164"
+         sodipodi:role="line">Checklist::getFinalItem()</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;line-height:30px;font-family:Roboto;-inkscape-font-specification:Roboto;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#4caf50;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="400"
+       y="-848"
+       id="text1170"><tspan
+         sodipodi:role="line"
+         id="tspan1168"
+         x="400"
+         y="-848"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16px;font-family:'Roboto Mono';-inkscape-font-specification:'Roboto Mono Bold';text-align:end;text-anchor:end;fill:#404040;fill-opacity:1">Checklist::getItem(int)</tspan></text>
+    <text
+       id="text1178"
+       y="-848"
+       x="1040"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;line-height:30px;font-family:Roboto;-inkscape-font-specification:Roboto;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#4caf50;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16px;font-family:'Roboto Mono';-inkscape-font-specification:'Roboto Mono Bold';text-align:start;text-anchor:start;fill:#404040;fill-opacity:1"
+         y="-848"
+         x="1040"
+         id="tspan1176"
+         sodipodi:role="line">Item::getTitle()</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;line-height:30px;font-family:Roboto;-inkscape-font-specification:Roboto;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#4caf50;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="1040"
+       y="-824"
+       id="text1182"><tspan
+         sodipodi:role="line"
+         id="tspan1180"
+         x="1040"
+         y="-824"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16px;font-family:'Roboto Mono';-inkscape-font-specification:'Roboto Mono Bold';text-align:start;text-anchor:start;fill:#404040;fill-opacity:1">Item::setTitle(String)</tspan></text>
+    <text
+       id="text1186"
+       y="-712"
+       x="1040"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;line-height:30px;font-family:Roboto;-inkscape-font-specification:Roboto;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#4caf50;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16px;font-family:'Roboto Mono';-inkscape-font-specification:'Roboto Mono Bold';text-align:start;text-anchor:start;fill:#404040;fill-opacity:1"
+         y="-712"
+         x="1040"
+         id="tspan1184"
+         sodipodi:role="line">Item::getContent()</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;line-height:30px;font-family:Roboto;-inkscape-font-specification:Roboto;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#4caf50;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="1040"
+       y="-688"
+       id="text1190"><tspan
+         sodipodi:role="line"
+         id="tspan1188"
+         x="1040"
+         y="-688"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16px;font-family:'Roboto Mono';-inkscape-font-specification:'Roboto Mono Bold';text-align:start;text-anchor:start;fill:#404040;fill-opacity:1">Item::setContent(ItemContent)</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;line-height:30px;font-family:Roboto;-inkscape-font-specification:Roboto;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#4caf50;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="1040"
+       y="-616"
+       id="text1194"><tspan
+         sodipodi:role="line"
+         id="tspan1192"
+         x="1040"
+         y="-616"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16px;font-family:'Roboto Mono';-inkscape-font-specification:'Roboto Mono Bold';text-align:start;text-anchor:start;fill:#404040;fill-opacity:1">Item::getControls()</tspan></text>
+    <text
+       id="text1198"
+       y="-592"
+       x="1040"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;line-height:30px;font-family:Roboto;-inkscape-font-specification:Roboto;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#4caf50;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16px;font-family:'Roboto Mono';-inkscape-font-specification:'Roboto Mono Bold';text-align:start;text-anchor:start;fill:#404040;fill-opacity:1"
+         y="-592"
+         x="1040"
+         id="tspan1196"
+         sodipodi:role="line">Item::setControls(ItemControls)</tspan></text>
+    <text
+       id="text1202"
+       y="-456"
+       x="1040"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;line-height:30px;font-family:Roboto;-inkscape-font-specification:Roboto;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#4caf50;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:24px;font-family:'Roboto Mono';-inkscape-font-specification:'Roboto Mono Bold';fill:#4caf50;fill-opacity:1"
+         y="-456"
+         x="1040"
+         id="tspan1200"
+         sodipodi:role="line">STATUS</tspan></text>
+    <text
+       id="text1206"
+       y="-432"
+       x="1040"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;line-height:30px;font-family:Roboto;-inkscape-font-specification:Roboto;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#4caf50;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16px;font-family:'Roboto Mono';-inkscape-font-specification:'Roboto Mono Bold';text-align:start;text-anchor:start;fill:#404040;fill-opacity:1"
+         y="-432"
+         x="1040"
+         id="tspan1204"
+         sodipodi:role="line">Item::getStatus()</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;line-height:30px;font-family:Roboto;-inkscape-font-specification:Roboto;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#4caf50;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="1040"
+       y="-408"
+       id="text1210"><tspan
+         sodipodi:role="line"
+         id="tspan1208"
+         x="1040"
+         y="-408"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16px;font-family:'Roboto Mono';-inkscape-font-specification:'Roboto Mono Bold';text-align:start;text-anchor:start;fill:#404040;fill-opacity:1">Item::setStatus(Status)</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;line-height:30px;font-family:Roboto;-inkscape-font-specification:Roboto;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#4caf50;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="1152"
+       y="-456"
+       id="text1214"><tspan
+         sodipodi:role="line"
+         id="tspan1212"
+         x="1152"
+         y="-436"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16px;font-family:'Roboto Mono';-inkscape-font-specification:'Roboto Mono Bold';text-align:start;text-anchor:start;fill:#404040;fill-opacity:1" /></text>
+    <text
+       id="text1222"
+       y="-368"
+       x="1040"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;line-height:30px;font-family:Roboto;-inkscape-font-specification:Roboto;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#4caf50;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16px;font-family:'Roboto Mono';-inkscape-font-specification:'Roboto Mono Bold';text-align:start;text-anchor:start;fill:#404040;fill-opacity:1"
+         y="-368"
+         x="1040"
+         id="tspan1220"
+         sodipodi:role="line">PENDING, GRANTED, DENIED, SKIPPED</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;line-height:30px;font-family:Roboto;-inkscape-font-specification:Roboto;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#4caf50;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="1040"
+       y="-288"
+       id="text1226"><tspan
+         sodipodi:role="line"
+         id="tspan1224"
+         x="1040"
+         y="-288"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:24px;font-family:'Roboto Mono';-inkscape-font-specification:'Roboto Mono Bold';fill:#4caf50;fill-opacity:1">SKIPPABLE</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;line-height:30px;font-family:Roboto;-inkscape-font-specification:Roboto;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#4caf50;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="1040"
+       y="-264"
+       id="text1230"><tspan
+         sodipodi:role="line"
+         id="tspan1228"
+         x="1040"
+         y="-264"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16px;font-family:'Roboto Mono';-inkscape-font-specification:'Roboto Mono Bold';text-align:start;text-anchor:start;fill:#404040;fill-opacity:1">Item::isSkippable()</tspan></text>
+    <text
+       id="text1234"
+       y="-240"
+       x="1040"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;line-height:30px;font-family:Roboto;-inkscape-font-specification:Roboto;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#4caf50;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16px;font-family:'Roboto Mono';-inkscape-font-specification:'Roboto Mono Bold';text-align:start;text-anchor:start;fill:#404040;fill-opacity:1"
+         y="-240"
+         x="1040"
+         id="tspan1232"
+         sodipodi:role="line">Item::setSkippable(boolean)</tspan></text>
+    <text
+       id="text1242"
+       y="-160"
+       x="1040"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;line-height:30px;font-family:Roboto;-inkscape-font-specification:Roboto;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#4caf50;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:24px;font-family:'Roboto Mono';-inkscape-font-specification:'Roboto Mono Bold';fill:#4caf50;fill-opacity:1"
+         y="-160"
+         x="1040"
+         id="tspan1240"
+         sodipodi:role="line">REVERSIBLE</tspan></text>
+    <text
+       id="text1246"
+       y="-136"
+       x="1040"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;line-height:30px;font-family:Roboto;-inkscape-font-specification:Roboto;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#4caf50;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16px;font-family:'Roboto Mono';-inkscape-font-specification:'Roboto Mono Bold';text-align:start;text-anchor:start;fill:#404040;fill-opacity:1"
+         y="-136"
+         x="1040"
+         id="tspan1244"
+         sodipodi:role="line">Item::isReversible()</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;line-height:30px;font-family:Roboto;-inkscape-font-specification:Roboto;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#4caf50;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="1040"
+       y="-112"
+       id="text1250"><tspan
+         sodipodi:role="line"
+         id="tspan1248"
+         x="1040"
+         y="-112"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16px;font-family:'Roboto Mono';-inkscape-font-specification:'Roboto Mono Bold';text-align:start;text-anchor:start;fill:#404040;fill-opacity:1">Item::setReversible(boolean)</tspan></text>
+    <text
+       id="text1254"
+       y="-224"
+       x="400"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;line-height:30px;font-family:Roboto;-inkscape-font-specification:Roboto;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#4caf50;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:24px;font-family:'Roboto Mono';-inkscape-font-specification:'Roboto Mono Bold';text-align:end;text-anchor:end;fill:#4caf50;fill-opacity:1"
+         y="-224"
+         x="400"
+         id="tspan1252"
+         sodipodi:role="line">ACTIVE</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;line-height:30px;font-family:Roboto;-inkscape-font-specification:Roboto;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#4caf50;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="400"
+       y="-200"
+       id="text1258"><tspan
+         sodipodi:role="line"
+         id="tspan1256"
+         x="400"
+         y="-200"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16px;font-family:'Roboto Mono';-inkscape-font-specification:'Roboto Mono Bold';text-align:end;text-anchor:end;fill:#404040;fill-opacity:1">Item::isActive()</tspan></text>
+    <text
+       id="text1262"
+       y="-176"
+       x="400"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;line-height:30px;font-family:Roboto;-inkscape-font-specification:Roboto;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#4caf50;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16px;font-family:'Roboto Mono';-inkscape-font-specification:'Roboto Mono Bold';text-align:end;text-anchor:end;fill:#404040;fill-opacity:1"
+         y="-176"
+         x="400"
+         id="tspan1260"
+         sodipodi:role="line">Item::activate()</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;line-height:30px;font-family:Roboto;-inkscape-font-specification:Roboto;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#4caf50;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="400"
+       y="-152"
+       id="text1270"><tspan
+         sodipodi:role="line"
+         id="tspan1268"
+         x="400"
+         y="-152"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16px;font-family:'Roboto Mono';-inkscape-font-specification:'Roboto Mono Bold';text-align:end;text-anchor:end;fill:#404040;fill-opacity:1">Item::deactivate()</tspan></text>
+    <text
+       id="text1274"
+       y="-128"
+       x="400"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;line-height:30px;font-family:Roboto;-inkscape-font-specification:Roboto;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#4caf50;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16px;font-family:'Roboto Mono';-inkscape-font-specification:'Roboto Mono Bold';text-align:end;text-anchor:end;fill:#404040;fill-opacity:1"
+         y="-128"
+         x="400"
+         id="tspan1272"
+         sodipodi:role="line">Checklist::getActive()</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;line-height:30px;font-family:Roboto;-inkscape-font-specification:Roboto;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#4caf50;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="1040"
+       y="-32"
+       id="text1278"><tspan
+         sodipodi:role="line"
+         id="tspan1276"
+         x="1040"
+         y="-32"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:24px;font-family:'Roboto Mono';-inkscape-font-specification:'Roboto Mono Bold';fill:#4caf50;fill-opacity:1">MOVEMENT</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;line-height:30px;font-family:Roboto;-inkscape-font-specification:Roboto;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#4caf50;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="1040"
+       y="-8"
+       id="text1282"><tspan
+         sodipodi:role="line"
+         id="tspan1280"
+         x="1040"
+         y="-8"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16px;font-family:'Roboto Mono';-inkscape-font-specification:'Roboto Mono Bold';text-align:start;text-anchor:start;fill:#404040;fill-opacity:1">Item::canGoForwards()</tspan></text>
+    <text
+       id="text1286"
+       y="16"
+       x="1040"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;line-height:30px;font-family:Roboto;-inkscape-font-specification:Roboto;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#4caf50;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16px;font-family:'Roboto Mono';-inkscape-font-specification:'Roboto Mono Bold';text-align:start;text-anchor:start;fill:#404040;fill-opacity:1"
+         y="16"
+         x="1040"
+         id="tspan1284"
+         sodipodi:role="line">Item::canGoBack()</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;line-height:30px;font-family:Roboto;-inkscape-font-specification:Roboto;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#4caf50;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="400"
+       y="-312"
+       id="text1848"><tspan
+         sodipodi:role="line"
+         id="tspan1846"
+         x="400"
+         y="-312"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16px;font-family:'Roboto Mono';-inkscape-font-specification:'Roboto Mono Bold';text-align:end;text-anchor:end;fill:#404040;fill-opacity:1">Item::isFinalItem()</tspan></text>
+  </g>
+</svg>

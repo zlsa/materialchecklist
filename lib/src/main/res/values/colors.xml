@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <color name="primary">#303030</color>
+  <color name="primary_dark">#000000</color>
+  <color name="accent">#4caf50</color>
+
+  <color name="statusbar">#000000</color>
+
+  <color name="item_pending">#cccccc</color>
+  <color name="item_success">#4caf50</color>
+
+  <color name="item_pending_text">#ffffff</color>
+
+  <color name="item_title_inactive">#50000000</color>
+  <color name="item_title_active">#dd000000</color>
+
+  <!-- Item lists -->
+  <color name="background">#fafafa</color>
+
+  <color name="text_primary">#dd000000</color>
+  <color name="text_secondary">#8a000000</color>
+  <color name="item_active_background">#ffffff</color>
+</resources>
