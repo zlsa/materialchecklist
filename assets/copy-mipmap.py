@@ -18,11 +18,11 @@ def export_icon(icon_path, icon_name, density=True, filename=None, quiet=False):
         svg_filename = './' + icon_path + '.svg'
 
     if density == True:
-        first = False
+        print('exporting ' + icon_name + ' (' + svg_filename + ')')
+        
         for d in DENSITIES:
-            if not export_icon(icon_path, icon_name, d, svg_filename, first):
+            if not export_icon(icon_path, icon_name, d, svg_filename, True):
                 return
-            first = True
             
         return
 
@@ -58,5 +58,6 @@ def export_icons(icons):
 if __name__ == '__main__':
     export_icons([
         ['ic_launcher', 'app/ic_launcher'],
-        ['ic_launcher_round', 'app/ic_launcher_round']
+        ['ic_launcher_round', 'app/ic_launcher_round'],
+        ['ic_launcher_foreground', 'app/ic_launcher_foreground']
     ])

@@ -15,7 +15,7 @@ import com.zlsadesign.materialchecklist.checklist.Item;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class ChecklistFragment extends Fragment {
+public class ChecklistFragment extends Fragment implements Checklist.Listener {
 
   private Checklist checklist = new Checklist();
 
@@ -35,6 +35,8 @@ public class ChecklistFragment extends Fragment {
   public void setChecklist(Checklist checklist) {
     this.checklist = checklist;
 
+    this.checklist.setListener(this);
+
     if(this.root != null) {
       this.rebuild();
     }
@@ -45,13 +47,16 @@ public class ChecklistFragment extends Fragment {
     this.root.removeAllViews();
 
     for(Item item : this.checklist.getItems()) {
-      Log.d("ChecklistFragment", "item " + item.getTitle());
-
       Item.View item_view = new Item.View(item);
 
       this.root.addView(item_view.getView(this.getActivity(), this.root));
     }
 
+  }
+
+  @Override
+  public void onClose() {
+    ((ChecklistActivity) this.getActivity()).onClose();
   }
 
 }

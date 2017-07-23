@@ -214,11 +214,11 @@
      borderopacity="0.4941176471"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:zoom="5.65685424203047"
-     inkscape:cx="79.66305336701068"
-     inkscape:cy="9.411632707679026"
+     inkscape:zoom="2"
+     inkscape:cx="26.59372611761387"
+     inkscape:cy="26.59367078759493"
      inkscape:document-units="px"
-     inkscape:current-layer="layer3"
+     inkscape:current-layer="layer1"
      showgrid="false"
      borderlayer="true"
      units="px"
@@ -370,7 +370,7 @@
        style="display:inline;opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:30.1698894501;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
     <g
        id="g1402"
-       transform="translate(0,0.9999993494946863)">
+       transform="matrix(1,0,0,0.3333331813823276,0,11.66666828843169)">
       <rect
          y="12.99999904632568"
          x="8"
@@ -395,7 +395,7 @@
     </g>
     <g
        id="g1410"
-       transform="matrix(1,0,0,-1,0,46.99999934949469)">
+       transform="matrix(1,0,0,-0.6666665401630087,0,41.66666407157573)">
       <rect
          style="opacity:0.1;fill:url(#linearGradient1412);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
          id="rect1404"

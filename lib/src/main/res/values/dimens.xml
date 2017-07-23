@@ -3,6 +3,9 @@
   <dimen name="line_width">4dp</dimen>
 
   <dimen name="item_title_text_size">16sp</dimen>
+  <dimen name="item_subtitle_text_size">12sp</dimen>
+  <dimen name="item_title_subtitle_gap">16dp</dimen>
+  <dimen name="item_title_subtitle_margin_end">16dp</dimen>
 
   <dimen name="item_height">64dp</dimen>
 
@@ -12,5 +15,16 @@
   <dimen name="item_number_text_size">12sp</dimen>
   <dimen name="item_number_corner_radius">80sp</dimen>
 
-  <dimen name="item_active_elevation">16dp</dimen>
+  <dimen name="item_number_scrim_margin_top">17dp</dimen>
+  <dimen name="item_number_scrim_size">30sp</dimen>
+
+  <dimen name="item_line_above_height">32dp</dimen>
+
+  <dimen name="item_active_elevation">4dp</dimen>
+
+  <dimen name="item_content_text_description_margin_end">16dp</dimen>
+  <dimen name="item_content_text_description_margin_bottom">24dp</dimen>
+
+  <dimen name="item_controls_buttons_height">48dp</dimen>
+  <dimen name="item_controls_buttons_margin_end">0dp</dimen>
 </resources>

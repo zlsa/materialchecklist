@@ -1,5 +1,7 @@
 <resources>
   <string name="app_name">MaterialChecklist Demo</string>
-  <string name="launch_checklist_with_permissions">Checklist with permissions</string>
+
   <string name="launch_basic_checklist">Basic checklist</string>
+  <string name="launch_complex_checklist">Complex checklist</string>
+  <string name="launch_checklist_with_permissions">Checklist with permissions</string>
 </resources>

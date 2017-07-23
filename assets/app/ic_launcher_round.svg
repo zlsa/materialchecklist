@@ -168,7 +168,8 @@
        x1="13"
        y1="15.99999904632568"
        x2="13"
-       y2="13.99999904632568" />
+       y2="13.99999904632568"
+       gradientTransform="matrix(0.9999999999999998,0,0,0.4999993872163617,0,8.000009685328777)" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient1387"
@@ -245,12 +246,12 @@
      borderopacity="0.4941176471"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:zoom="7.999999987336675"
-     inkscape:cx="31.44765389538239"
-     inkscape:cy="1.587875849035655"
+     inkscape:zoom="1"
+     inkscape:cx="26.14836251794736"
+     inkscape:cy="15.55660321774934"
      inkscape:document-units="px"
-     inkscape:current-layer="layer5"
-     showgrid="true"
+     inkscape:current-layer="g1402"
+     showgrid="false"
      borderlayer="true"
      units="px"
      inkscape:window-width="1600"
@@ -261,7 +262,7 @@
      showborder="true"
      inkscape:snap-smooth-nodes="true"
      inkscape:object-nodes="true"
-     showguides="true"
+     showguides="false"
      inkscape:guide-bbox="true"
      inkscape:snap-center="true"
      inkscape:snap-global="true"
@@ -302,7 +303,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -391,12 +392,12 @@
            x="8"
            y="12.99999904632568" />
         <rect
-           y="13.99999904632568"
+           y="15.00000095367432"
            x="8"
-           height="2.000000715255737"
+           height="0.9999991059303284"
            width="32"
            id="rect1391"
-           style="opacity:0.1;fill:url(#linearGradient1491);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+           style="opacity:0.1;fill:url(#linearGradient1491);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.4142127037;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
         <rect
            style="opacity:0.1;fill:url(#linearGradient1493);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
            id="rect1395"
@@ -427,7 +428,7 @@
          y="25.5" />
       <g
          id="g1520"
-         transform="matrix(1.500000011627808,0,0,-1,-12.00000009302246,46.99999839582039)">
+         transform="matrix(1.500000011627808,0,0,-0.6666668580543669,-12.00000009302246,41.66666820416308)">
         <rect
            y="12.99999904632568"
            x="8"

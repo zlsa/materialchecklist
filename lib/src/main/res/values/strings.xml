@@ -1,3 +1,19 @@
 <resources>
-  <string name="materialchecklist_contents_generic">Generic ItemContents</string>
+  <string name="materialchecklist_contents_generic">Contents</string>
+  <string name="materialchecklist_controls_generic">Controls</string>
+
+  <string name="action_default">Action</string>
+
+  <string name="action_agree">Agree</string>
+  <string name="action_disagree">Disagree</string>
+
+  <string name="action_yes">Yes</string>
+  <string name="action_no">No</string>
+
+  <string name="action_next">Next</string>
+  <string name="action_back">Back</string>
+
+  <string name="action_skip">Skip</string>
+
+  <string name="action_finish">Finish</string>
 </resources>

@@ -38,4 +38,9 @@ public abstract class ChecklistActivity extends Activity {
     transaction.replace(R.id.checklist_fragment, fragment);
     transaction.commit();
   }
+
+  public void onClose() {
+    this.finish();
+  }
+
 }

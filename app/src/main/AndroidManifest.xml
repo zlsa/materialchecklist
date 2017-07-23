@@ -22,6 +22,9 @@
     <activity android:name=".BasicChecklistActivity">
     </activity>
 
+    <activity android:name=".ComplexChecklistActivity">
+    </activity>
+
   </application>
 
 </manifest>

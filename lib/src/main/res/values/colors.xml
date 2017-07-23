@@ -8,10 +8,12 @@
 
   <color name="item_pending">#cccccc</color>
   <color name="item_success">#4caf50</color>
+  <color name="item_success_redo">#cbe3cc</color>
 
   <color name="item_pending_text">#ffffff</color>
 
-  <color name="item_title_inactive">#50000000</color>
+  <color name="item_title_inactive">#65000000</color>
+  <color name="item_title_success">#8a000000</color>
   <color name="item_title_active">#dd000000</color>
 
   <!-- Item lists -->
@@ -19,5 +21,7 @@
 
   <color name="text_primary">#dd000000</color>
   <color name="text_secondary">#8a000000</color>
+  <color name="text_ternary">#45000000</color>
+
   <color name="item_active_background">#ffffff</color>
 </resources>

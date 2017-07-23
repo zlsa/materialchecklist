@@ -17,6 +17,12 @@
     <item name="android:textColor">@color/text_primary</item>
   </style>
 
+  <style name="MaterialChecklist.TextAppearance.ItemSubtitle" parent="@android:style/TextAppearance.Material">
+    <item name="android:textSize">@dimen/item_subtitle_text_size</item>
+    <item name="android:fontFamily">sans-serif</item>
+    <item name="android:textColor">@color/text_secondary</item>
+  </style>
+
   <style name="MaterialChecklist.TextAppearance.ItemNumber" parent="@android:style/TextAppearance.Material">
     <item name="android:layout_width">@dimen/item_number_size</item>
     <item name="android:layout_height">@dimen/item_number_size</item>
@@ -30,6 +36,16 @@
     <item name="android:fontFamily">sans-serif</item>
     <item name="android:textStyle">bold</item>
     <item name="android:textColor">@color/item_pending_text</item>
+  </style>
+
+  <style name="MaterialChecklist.TextAppearance.ItemNumberScrim" parent="@style/MaterialChecklist.TextAppearance.ItemNumber">
+    <item name="android:layout_width">@dimen/item_number_scrim_size</item>
+    <item name="android:layout_height">@dimen/item_number_scrim_size</item>
+
+    <item name="android:background">@drawable/item_number_scrim_background</item>
+    <item name="android:gravity">center</item>
+    <item name="android:layout_gravity">center|top</item>
+    <item name="android:layout_marginTop">@dimen/item_number_scrim_margin_top</item>
   </style>
 
 </resources>
