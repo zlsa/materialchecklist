@@ -23,8 +23,14 @@
   <dimen name="item_active_elevation">4dp</dimen>
 
   <dimen name="item_content_text_description_margin_end">16dp</dimen>
-  <dimen name="item_content_text_description_margin_bottom">24dp</dimen>
+  <dimen name="item_content_text_description_margin_bottom">0dp</dimen>
 
-  <dimen name="item_controls_buttons_height">48dp</dimen>
-  <dimen name="item_controls_buttons_margin_end">0dp</dimen>
+  <dimen name="item_controls_buttons_height">64dp</dimen>
+  <dimen name="item_controls_buttons_margin_end">16dp</dimen>
+
+  <dimen name="item_corner_radius">2dp</dimen>
+
+  <dimen name="item_landscape_top_gap">12dp</dimen>
+  <dimen name="item_landscape_width">480dp</dimen>
+  <dimen name="item_landscape_padding_horizontal">16dp</dimen>
 </resources>

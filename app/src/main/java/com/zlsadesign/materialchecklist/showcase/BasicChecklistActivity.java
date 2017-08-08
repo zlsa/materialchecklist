@@ -24,12 +24,31 @@ public class BasicChecklistActivity extends ChecklistActivity {
     this.checklist.add(
         new Item.Builder()
             .withTitle("This is an unimportant step.")
-            .withContents("We're so sure of this that we're making you click 'next' once again! " +
-                "We're even letting you skip it if you choose.")
+            .withContents("We're so sure of this that we're even letting you skip it if you choose.")
             .withSkippable(true)
             .withReversible(true)
             .build()
     );
+
+    this.checklist.add(
+        new Item.Builder()
+            .withTitle("Lots of text step.")
+            .withContents("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dapibus porttitor orci, at fringilla arcu mattis id. Maecenas lacinia elementum iaculis. Proin non malesuada nisi, at feugiat mi. Integer rhoncus ligula diam, quis facilisis leo iaculis quis. Nulla facilisi. Maecenas consequat dapibus enim, in dictum ipsum pharetra vitae. Etiam vulputate porttitor viverra. Maecenas enim leo, fermentum a tortor sed, elementum viverra magna. Aliquam pellentesque, purus sed tincidunt volutpat, orci mi eleifend metus, vulputate cursus arcu magna in lorem. Nulla et maximus diam, quis ultrices nisi. In accumsan sem vehicula risus sollicitudin volutpat. Donec in imperdiet urna.")
+            .withSkippable(true)
+            .withReversible(true)
+            .build()
+    );
+
+    for(int i=0; i<3; i++) {
+      this.checklist.add(
+          new Item.Builder()
+              .withTitle("Step #" + (i + 4))
+              .withContents("Ugh, this is boring.")
+              .withSkippable(true)
+              .withReversible(true)
+              .build()
+      );
+    }
 
     this.checklist.addFinal(
         new Item.Builder()

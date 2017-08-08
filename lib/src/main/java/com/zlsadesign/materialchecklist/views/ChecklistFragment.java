@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
+import android.widget.ScrollView;
 
 import com.zlsadesign.materialchecklist.R;
 import com.zlsadesign.materialchecklist.checklist.Checklist;
@@ -17,15 +18,19 @@ import butterknife.ButterKnife;
 
 public class ChecklistFragment extends Fragment implements Checklist.Listener {
 
-  private Checklist checklist = new Checklist();
+  private Checklist checklist = null;
 
   private LinearLayout root = null;
+  private ScrollView scroll;
 
   @Override
   public View onCreateView(LayoutInflater inflater, ViewGroup root, Bundle state) {
     View view = inflater.inflate(R.layout.fragment_checklist, root, false);
 
+    this.scroll = ButterKnife.findById(view, R.id.checklist_scroll);
     this.root = ButterKnife.findById(view, R.id.checklist_root);
+
+    this.setRetainInstance(true);
 
     this.rebuild();
 
@@ -49,7 +54,7 @@ public class ChecklistFragment extends Fragment implements Checklist.Listener {
     for(Item item : this.checklist.getItems()) {
       Item.View item_view = new Item.View(item);
 
-      this.root.addView(item_view.getView(this.getActivity(), this.root));
+      this.root.addView(item_view.createView(this.getActivity(), this.root));
     }
 
   }
@@ -57,6 +62,34 @@ public class ChecklistFragment extends Fragment implements Checklist.Listener {
   @Override
   public void onClose() {
     ((ChecklistActivity) this.getActivity()).onClose();
+  }
+
+  @Override
+  public void onActiveItemChange() {
+
+  }
+
+  @Override
+  public void onUpdateScroll() {
+
+    this.scroll.post(new Runnable() {
+
+      @Override
+      public void run() {
+        int collapsed_height = (int) getActivity().getResources().getDimension(R.dimen.item_height);
+
+        if(checklist.getActiveItemIndex() == 0) {
+          scroll.scrollTo(0, 0);
+          return;
+        }
+
+        View item_view = checklist.getItem(checklist.getActiveItemIndex() - 1).getView().getRoot();
+
+        scroll.smoothScrollTo(0, (int) (item_view.getTop() + collapsed_height * 0.5));
+      }
+
+    });
+
   }
 
 }

@@ -28,6 +28,9 @@ public class LaunchActivity extends Activity {
       case R.id.launch_complex_checklist:
         this.launchActivity(ComplexChecklistActivity.class);
         break;
+      case R.id.launch_permissions_checklist:
+        this.launchActivity(PermissionsChecklistActivity.class);
+        break;
     }
 
   }

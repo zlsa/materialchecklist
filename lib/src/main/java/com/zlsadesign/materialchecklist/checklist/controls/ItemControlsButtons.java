@@ -2,9 +2,11 @@ package com.zlsadesign.materialchecklist.checklist.controls;
 
 import android.content.Context;
 import android.util.Log;
+import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 import com.zlsadesign.materialchecklist.R;
 import com.zlsadesign.materialchecklist.checklist.Item;
@@ -54,6 +56,15 @@ public class ItemControlsButtons extends ItemControls {
     this.buttons.add(button);
 
     return this;
+  }
+
+  public void setItem(Item item) {
+    super.setItem(item);
+
+    this.build();
+  }
+
+  public void build() {
   }
 
   public ItemControlsButtons addButton(int button, boolean action) {
@@ -153,9 +164,9 @@ public class ItemControlsButtons extends ItemControls {
 
   }
 
-  private void buttonClicked(Button button) {
+  protected void buttonClicked(Button button) {
 
-    Log.d("ItemControlsButtons", "Flags: " + button.flags);
+    //Log.d("ItemControlsButtons", "Flags: " + button.flags);
 
     if((button.flags & FLAG_STATUS_SKIPPED) != 0) {
       this.item.addStatus(Item.STATUS_SKIPPED);
@@ -191,6 +202,7 @@ public class ItemControlsButtons extends ItemControls {
 
     private android.view.View view = null;
     private ItemControlsButtons controls = null;
+    private android.widget.Button button;
 
     Button(int id, String label, int flags) {
       this.label = label;
@@ -214,26 +226,43 @@ public class ItemControlsButtons extends ItemControls {
       this.action = action;
     }
 
+    public int getId() {
+      return this.id;
+    }
+
     public android.view.View createView(ItemControlsButtons controls, Context context, LayoutInflater inflater, ViewGroup root) {
       this.controls = controls;
 
       this.view = inflater.inflate(R.layout.item_controls_buttons_button, root, false);
 
-      android.widget.Button button = ButterKnife.findById(this.view, R.id.button);
+      this.button = ButterKnife.findById(this.view, R.id.button);
 
       if(this.res_label >= 0) {
-        button.setText(this.res_label);
+        this.button.setText(this.res_label);
       } else {
-        button.setText(this.label);
+        this.button.setText(this.label);
       }
 
       if(this.action) {
-        button.setTextColor(context.getResources().getColor(R.color.item_success));
+        final TypedValue value = new TypedValue();
+        context.getTheme().resolveAttribute(android.R.attr.colorPrimary, value, true);
+
+        this.button.setTextColor(value.data);
       }
 
-      button.setOnClickListener(this);
+      this.button.setOnClickListener(this);
 
       return this.view;
+    }
+
+    public void setText(String label) {
+      this.label = label;
+      this.button.setText(label);
+    }
+
+    public void setText(int label) {
+      this.res_label = label;
+      this.button.setText(label);
     }
 
     @Override

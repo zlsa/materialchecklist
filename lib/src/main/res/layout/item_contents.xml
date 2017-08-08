@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+
+  android:id="@+id/item_contents_root"
+
+  android:elevation="0dp"
+
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+
+  android:orientation="horizontal"
+
+  android:clipToPadding="false"
+  >
+
+  <FrameLayout
+    android:layout_width="48dp"
+    android:layout_height="match_parent"
+
+    android:layout_marginEnd="8dp"
+    >
+
+    <View
+      android:id="@+id/item_line_below"
+
+      android:background="@color/item_pending"
+
+      android:layout_width="@dimen/line_width"
+      android:layout_height="match_parent"
+
+      android:layout_gravity="center"
+      />
+
+    <TextView
+      android:id="@+id/item_number_scrim"
+
+      android:text=""
+
+      style="@style/MaterialChecklist.TextAppearance.ItemNumberScrim"
+      />
+
+    <View
+      android:id="@+id/item_line_above"
+
+      android:background="@color/item_pending"
+
+      android:layout_width="@dimen/line_width"
+      android:layout_height="@dimen/item_line_above_height"
+
+      android:layout_gravity="center|top"
+      />
+
+    <TextView
+      android:id="@+id/item_number"
+
+      android:text=""
+
+      style="@style/MaterialChecklist.TextAppearance.ItemNumber"
+      />
+
+    <ImageView
+      android:id="@+id/item_number_final"
+
+      android:visibility="gone"
+
+      android:src="@drawable/ic_item_final"
+
+      android:tint="@color/item_pending_text"
+
+      style="@style/MaterialChecklist.TextAppearance.ItemNumber"
+      />
+
+  </FrameLayout>
+
+  <LinearLayout
+    android:id="@+id/item_title_contents_controls"
+
+    android:orientation="vertical"
+
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    >
+
+    <RelativeLayout
+      android:id="@+id/item_title_subtitle"
+
+      android:layout_width="wrap_content"
+      android:layout_height="@dimen/item_height"
+
+      android:gravity="center|start"
+      >
+
+      <TextView
+        android:id="@+id/item_title"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+
+        style="@style/MaterialChecklist.TextAppearance.ItemTitle"
+        />
+
+      <TextView
+        android:id="@+id/item_subtitle"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:gravity="end"
+
+        android:layout_alignBaseline="@id/item_title"
+        android:layout_toEndOf="@id/item_title"
+        android:layout_alignParentEnd="true"
+
+        android:layout_marginStart="@dimen/item_title_subtitle_gap"
+        android:layout_marginEnd="@dimen/item_title_subtitle_margin_end"
+
+        style="@style/MaterialChecklist.TextAppearance.ItemSubtitle"
+        />
+
+    </RelativeLayout>
+
+    <LinearLayout
+      android:id="@+id/item_contents_controls"
+
+      android:orientation="vertical"
+
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      >
+
+      <FrameLayout
+        android:id="@+id/item_contents"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+      <FrameLayout
+        android:id="@+id/item_controls"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_gravity="end|bottom"
+        />
+
+    </LinearLayout>
+
+  </LinearLayout>
+
+</LinearLayout>

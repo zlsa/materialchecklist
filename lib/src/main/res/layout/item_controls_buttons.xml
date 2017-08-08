@@ -9,7 +9,7 @@
   android:layout_width="match_parent"
   android:layout_height="@dimen/item_controls_buttons_height"
 
-  android:gravity="end"
+  android:gravity="center|end"
 
   android:layout_marginEnd="@dimen/item_controls_buttons_margin_end"
   >

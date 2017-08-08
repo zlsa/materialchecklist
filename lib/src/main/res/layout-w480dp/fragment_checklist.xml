@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+
+  android:id="@+id/checklist_scroll"
+
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+
+  android:scrollbars="none"
+  >
+
+  <FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <!-- The top little stub of line. This is critical.-->
+
+    <FrameLayout
+      android:layout_width="@dimen/item_landscape_width"
+      android:layout_height="@dimen/item_landscape_top_gap"
+
+      android:paddingStart="@dimen/item_landscape_padding_horizontal"
+      android:paddingEnd="@dimen/item_landscape_padding_horizontal"
+
+      android:layout_gravity="center|top"
+      >
+
+      <FrameLayout
+        android:layout_width="48dp"
+        android:layout_height="match_parent"
+
+        android:layout_marginStart="@dimen/item_landscape_padding_horizontal"
+        >
+
+        <View
+          android:background="?android:colorPrimary"
+
+          android:layout_width="@dimen/line_width"
+          android:layout_height="match_parent"
+
+          android:layout_gravity="center"
+          />
+
+      </FrameLayout>
+
+    </FrameLayout>
+
+    <LinearLayout
+      android:id="@+id/checklist_root"
+
+      android:orientation="vertical"
+
+      android:layout_width="@dimen/item_landscape_width"
+      android:layout_height="wrap_content"
+
+      android:layout_gravity="center"
+
+      android:clipToPadding="false"
+
+      android:paddingStart="@dimen/item_landscape_padding_horizontal"
+      android:paddingEnd="@dimen/item_landscape_padding_horizontal"
+
+      android:paddingTop="@dimen/item_landscape_top_gap"
+      android:paddingBottom="@dimen/item_height"
+      >
+
+    </LinearLayout>
+
+  </FrameLayout>
+
+</ScrollView>

@@ -3,10 +3,21 @@ package com.zlsadesign.materialchecklist.checklist;
 import android.animation.StateListAnimator;
 import android.content.Context;
 import android.content.res.Resources;
+import android.os.Bundle;
+import android.transition.Scene;
+import android.transition.Transition;
+import android.transition.TransitionInflater;
+import android.transition.TransitionManager;
 import android.util.Log;
+import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.AccelerateDecelerateInterpolator;
+import android.view.animation.Animation;
+import android.view.animation.BounceInterpolator;
+import android.view.animation.DecelerateInterpolator;
+import android.view.animation.Transformation;
 import android.widget.LinearLayout;
 import android.widget.ScrollView;
 import android.widget.TextView;
@@ -17,11 +28,14 @@ import com.zlsadesign.materialchecklist.checklist.contents.ItemContentsTextDescr
 import com.zlsadesign.materialchecklist.checklist.controls.ItemControls;
 import com.zlsadesign.materialchecklist.checklist.controls.ItemControlsFinish;
 import com.zlsadesign.materialchecklist.checklist.controls.ItemControlsNext;
+import com.zlsadesign.materialchecklist.views.animation.ResizeAnimation;
 
 import butterknife.ButterKnife;
 
 import static android.view.View.GONE;
 import static android.view.View.INVISIBLE;
+import static android.view.View.MeasureSpec.AT_MOST;
+import static android.view.View.MeasureSpec.UNSPECIFIED;
 import static android.view.View.VISIBLE;
 
 public class Item {
@@ -98,6 +112,32 @@ public class Item {
     return this.checklist;
   }
 
+  // # State management. Yay Android lifecycles.
+
+  public Bundle getState() {
+    Bundle bundle = new Bundle();
+
+    bundle.putInt("status", this.status);
+    bundle.putInt("activation_times", this.activation_times);
+
+    bundle.putString("title", this.title);
+    bundle.putString("subtitle", this.subtitle);
+
+    //bundle.putBundle("contents", this.contents.getState());
+
+    return bundle;
+  }
+
+  public void applyState(Bundle bundle) {
+    this.status = bundle.getInt("status");
+    this.activation_times = bundle.getInt("activation_times");
+
+    this.title = bundle.getString("title");
+    this.subtitle = bundle.getString("subtitle");
+
+    this.deactivate();
+  }
+
   // # Getters and setters
 
   // ## Title
@@ -162,8 +202,6 @@ public class Item {
   private void _setStatus(int status) {
     this.status = status;
 
-    Log.d("Item", "Status changed: now " + status);
-
     this.updateView();
     // TODO: notify basically everybody that our status has changed.
   }
@@ -190,13 +228,11 @@ public class Item {
 
   public void setReversible(boolean reversible) {
     this.reversible = reversible;
-
-    Log.d("Item", "setting reversible to " + reversible + " on " + this.getTitle());
   }
 
   // ## Movement
 
-  private int getIndex() {
+  int getIndex() {
     return this.checklist.getItemIndex(this);
   }
 
@@ -243,7 +279,6 @@ public class Item {
   public boolean canActivate() {
     // If we're active, return `false`.
     if(this.isActive()) {
-      Log.d("Item", "can't activate because we're already active");
       return false;
     }
 
@@ -318,6 +353,10 @@ public class Item {
     this.active = true;
     this.activation_times += 1;
 
+    if(this.view != null) {
+      this.view.setActive(true);
+    }
+
     this.updateView();
   }
 
@@ -325,6 +364,10 @@ public class Item {
 
   public void _setInactive() {
     this.active = false;
+
+    if(this.view != null) {
+      this.view.setActive(false);
+    }
 
     this.updateView();
   }
@@ -357,6 +400,10 @@ public class Item {
     this.view = view;
   }
 
+  public View getView() {
+    return this.view;
+  }
+
   void updateView() {
 
     if(this.view != null) {
@@ -372,7 +419,15 @@ public class Item {
     private Context context;
 
     private Item item;
+
+    Transition transition_manager;
+    Scene scene_normal;
+    Scene scene_expanded;
+
     private android.view.View view;
+    private android.view.View contents_root;
+    private android.view.View contents_controls_view;
+
     private TextView title_view;
     private TextView subtitle_view;
     private TextView number_view;
@@ -383,7 +438,92 @@ public class Item {
       item.setView(this);
     }
 
-    public android.view.View getView(Context context, ViewGroup root) {
+    public static void expand(final android.view.View v, boolean suppress_animation) {
+      v.measure(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+      final int targetHeight = v.getMeasuredHeight();
+
+      // Older versions of android (pre API 21) cancel animations for views with a height of 0.
+      v.getLayoutParams().height = 1;
+      v.setVisibility(android.view.View.VISIBLE);
+
+      Animation a = new Animation() {
+        @Override
+        protected void applyTransformation(float interpolatedTime, Transformation t) {
+          v.getLayoutParams().height = interpolatedTime == 1
+              ? ViewGroup.LayoutParams.WRAP_CONTENT
+              : (int)(targetHeight * interpolatedTime);
+          v.requestLayout();
+        }
+
+        @Override
+        public boolean willChangeBounds() {
+          return true;
+        }
+      };
+
+      a.setInterpolator(new DecelerateInterpolator());
+
+      a.setDuration(200);
+
+      if(suppress_animation) {
+        a.setDuration(1);
+      }
+
+      v.startAnimation(a);
+    }
+
+    public static void collapse(final android.view.View v, boolean suppress_animation) {
+      final int initialHeight = v.getMeasuredHeight();
+
+      Animation a = new Animation() {
+
+        @Override
+        protected void applyTransformation(float interpolatedTime, Transformation t) {
+          if(interpolatedTime == 1){
+            v.setVisibility(android.view.View.GONE);
+          }else{
+            v.getLayoutParams().height = initialHeight - (int)(initialHeight * interpolatedTime);
+            v.requestLayout();
+          }
+        }
+
+        @Override
+        public boolean willChangeBounds() {
+          return true;
+        }
+      };
+
+      a.setInterpolator(new DecelerateInterpolator());
+
+      a.setDuration(200);
+
+      if(suppress_animation) {
+        a.setDuration(1);
+      }
+
+      v.startAnimation(a);
+    }
+
+    public void setActive(boolean active, boolean suppress_animation) {
+      ResizeAnimation animation;
+
+      if(active) {
+        expand(this.contents_controls_view, suppress_animation);
+      } else {
+        collapse(this.contents_controls_view, suppress_animation);
+      }
+
+      if(this.item.isActive()) {
+        this.item.checklist.updateScroll();
+      }
+
+    }
+
+    public void setActive(boolean active) {
+      this.setActive(active, false);
+    }
+
+    public android.view.View createView(Context context, ViewGroup root) {
       this.context = context;
 
       LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
@@ -398,30 +538,53 @@ public class Item {
       ((ViewGroup) ButterKnife.findById(this.view, R.id.item_controls))
           .addView(this.item.controls.getView().getView(context, (ViewGroup) this.view));
 
+      this.contents_root = ButterKnife.findById(this.view, R.id.item_contents_root);
+      this.contents_controls_view = ButterKnife.findById(this.view, R.id.item_contents_controls);
+
       this.title_view = ButterKnife.findById(this.view, R.id.item_title);
       this.subtitle_view = ButterKnife.findById(this.view, R.id.item_subtitle);
       this.number_view = ButterKnife.findById(this.view, R.id.item_number);
 
       this.update();
 
+      // # Click events
+      this.view.setOnClickListener(this);
+
+      if(item.isActive()) {
+        setActive(true, true);
+      }
+
       return this.view;
+    }
+
+    public android.view.View getRoot() {
+      return this.view;
+    }
+
+    private void setTitle(String title) {
+      this.title_view.setText(title);
+    }
+
+    private void setSubtitle(String subtitle) {
+      this.subtitle_view.setText(subtitle);
+    }
+
+    private void setNumber(String number) {
+      this.number_view.setText(number);
     }
 
     public void update() {
 
-      // # Click events
-      this.view.setOnClickListener(this);
-
       // # Setting values
 
       // ## Title
-      this.title_view.setText(this.item.getTitle());
+      this.setTitle(this.item.getTitle());
 
-      // ## Title
-      this.subtitle_view.setText(this.item.getSubtitle());
+      // ## Subitle
+      this.setSubtitle(this.item.getSubtitle());
 
       // ## Number
-      this.number_view.setText(this.item.getIndexString());
+      this.setNumber(this.item.getIndexString());
 
       // Handle the final item (should be a checkbox)
 
@@ -437,17 +600,19 @@ public class Item {
 
       Resources res = this.context.getResources();
 
-      LinearLayout.LayoutParams params = null;
-
       ButterKnife.findById(this.view, R.id.item_number_scrim).setVisibility(GONE);
       ButterKnife.findById(this.view, R.id.item_line_above).setVisibility(VISIBLE);
+
+      final TypedValue value = new TypedValue();
+      this.context.getTheme().resolveAttribute(android.R.attr.colorPrimary, value, true);
+
+      int primary_color = value.data;
 
       // If this should be green
       //if((this.item.status & STATUS_DONE) != 0) {
       if(this.item.getIndex() <= this.item.checklist.getActiveItemIndex()) {
-        Log.d("Item", this.item.getTitle() + " index: " + this.item.getIndex() + " vs active " + this.item.checklist.getActiveItemIndex());
-        ButterKnife.findById(this.view, R.id.item_line_above).setBackgroundResource(R.color.item_success);
-        ButterKnife.findById(this.view, R.id.item_line_below).setBackgroundResource(R.color.item_success);
+        ButterKnife.findById(this.view, R.id.item_line_above).setBackgroundColor(primary_color);
+        ButterKnife.findById(this.view, R.id.item_line_below).setBackgroundColor(primary_color);
         ButterKnife.findById(this.view, R.id.item_number).setBackgroundResource(R.drawable.item_number_background_success);
         ButterKnife.findById(this.view, R.id.item_number_final).setBackgroundResource(R.drawable.item_number_background_success);
       } else {
@@ -482,11 +647,14 @@ public class Item {
 
       if(this.item.isActive()) {
         this.view.setBackgroundColor(res.getColor(R.color.item_active_background));
+
+        if(true) {
+          this.view.setBackgroundResource(R.drawable.item_background_card);
+        }
+
         this.view.setElevation(res.getDimension(R.dimen.item_active_elevation));
 
         this.title_view.setTextColor(res.getColor(R.color.item_title_active));
-
-        params = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);
 
         if(this.item.subtitle_visible_when_active) {
           this.subtitle_view.setVisibility(VISIBLE);
@@ -501,11 +669,7 @@ public class Item {
         this.title_view.setTextColor(res.getColor(R.color.item_title_inactive));
 
         this.subtitle_view.setVisibility(VISIBLE);
-
-        params = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, (int) res.getDimension(R.dimen.item_height));
       }
-
-      this.view.setLayoutParams(params);
 
     }
 

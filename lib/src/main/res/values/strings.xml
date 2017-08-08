@@ -16,4 +16,10 @@
   <string name="action_skip">Skip</string>
 
   <string name="action_finish">Finish</string>
+
+  <string name="info_permissions_denied">Some permissions have been denied.</string>
+  <string name="info_permissions_denied_unskippable">You need to grant all of the permissions to use the app.</string>
+
+  <string name="action_grant_permissions">Grant permissions</string>
+  <string name="action_grant_permission">Grant permission</string>
 </resources>

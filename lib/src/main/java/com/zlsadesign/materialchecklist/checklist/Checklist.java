@@ -1,8 +1,11 @@
 package com.zlsadesign.materialchecklist.checklist;
 
+import android.os.Bundle;
 import android.util.Log;
 
+import com.zlsadesign.materialchecklist.checklist.controls.ItemControls;
 import com.zlsadesign.materialchecklist.checklist.controls.ItemControlsFinish;
+import com.zlsadesign.materialchecklist.checklist.controls.ItemControlsPermissions;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -21,6 +24,34 @@ public class Checklist {
 
     if(this.active_item_id == -1) {
       item.activate();
+    }
+
+  }
+
+  public Bundle getState() {
+    Bundle bundle = new Bundle();
+
+    bundle.putInt("active_item_id", this.active_item_id);
+    bundle.putInt("item-list-size", this.items.size());
+
+    for(Item item : this.items) {
+      bundle.putBundle("item-" + item.getIndex(), item.getState());
+    }
+
+    return bundle;
+  }
+
+  public void applyState(Bundle bundle) {
+
+    for(int i = 0; i < bundle.getInt("item-list-size"); i += 1) {
+      this.getItem(i).applyState(bundle.getBundle("item-" + i));
+    }
+
+    this.active_item_id = bundle.getInt("active_item_id");
+    this.getActiveItem().activate();
+
+    for(Item item : this.items) {
+      item.updateView();
     }
 
   }
@@ -54,6 +85,11 @@ public class Checklist {
     this.active_item_id = this.getItemIndex(item);
 
     item._setActive();
+
+    if(this.listener != null) {
+      this.listener.onActiveItemChange();
+    }
+
   }
 
   void _setInactive(Item item) {
@@ -145,7 +181,11 @@ public class Checklist {
         return null;
       }
 
-      if(next_item != null && !next_item.canActivate()) {
+      if(next_item == null) {
+        return null;
+      }
+
+      if(!next_item.canActivate()) {
         Log.d("Checklist", "Can't activate " + next_item.getTitle());
 
         return null;
@@ -186,8 +226,30 @@ public class Checklist {
     this.listener = listener;
   }
 
+  public void updateScroll() {
+    if(this.listener != null) {
+      this.listener.onUpdateScroll();
+    }
+  }
+
+  public void onRequestPermissionsResult(int code, String[] permissions, int[] results) {
+    for(Item item : this.items) {
+      ItemControls controls = item.getControls();
+
+      if(controls.getClass() == ItemControlsPermissions.class) {
+        ItemControlsPermissions controls_permissions = (ItemControlsPermissions) controls;
+
+        if(controls_permissions.getRequestCode() == code) {
+          controls_permissions.onRequestPermissionsResult(permissions, results);
+        }
+      }
+    }
+  }
+
   public interface Listener {
     void onClose();
+    void onActiveItemChange();
+    void onUpdateScroll();
   }
 
 }

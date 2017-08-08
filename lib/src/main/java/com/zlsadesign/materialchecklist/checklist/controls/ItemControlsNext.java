@@ -4,21 +4,22 @@ import com.zlsadesign.materialchecklist.R;
 
 public class ItemControlsNext extends ItemControlsButtons {
 
+  private int button = -1;
+
   public ItemControlsNext() {
     this(false);
   }
 
   public ItemControlsNext(boolean skip_button) {
-
-    if(skip_button) {
-      this.addButton(ItemControlsButtons.BUTTON_SKIP);
-    }
-
-    this.addButton(ItemControlsButtons.BUTTON_NEXT, true);
+    this.button = ItemControlsButtons.BUTTON_SKIP;
   }
 
   public ItemControlsNext(int button) {
-    if(button >= 0) {
+    this.button = button;
+  }
+
+  public void build() {
+    if(this.button >= 0) {
       this.addButton(button);
     }
 
