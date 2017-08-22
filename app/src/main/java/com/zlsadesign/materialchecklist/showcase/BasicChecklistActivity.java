@@ -13,7 +13,7 @@ public class BasicChecklistActivity extends ChecklistActivity {
 
     this.checklist.add(
         new Item.Builder()
-            .withTitle("Welcome to MaterialChecklist!")
+            .withTitle("Welcome to MaterialChecklist (except it's not compiling properly)!")
             .withContents("It's quite awesome, actually. Unfortunately, you must first click through" +
                 " this banal and useless set of screens to demonstrate an understanding of how" +
                 " this library functions.")

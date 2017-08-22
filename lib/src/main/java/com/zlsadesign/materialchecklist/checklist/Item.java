@@ -439,7 +439,13 @@ public class Item {
     }
 
     public static void expand(final android.view.View v, boolean suppress_animation) {
-      v.measure(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+      int availableWidth = ((android.view.View) v.getParent()).getWidth();
+      Log.d("View", "availableWidth is " + availableWidth);
+
+      int widthSpec = android.view.View.MeasureSpec.makeMeasureSpec(availableWidth, android.view.View.MeasureSpec.AT_MOST);
+      int heightSpec = android.view.View.MeasureSpec.makeMeasureSpec(0, android.view.View.MeasureSpec.UNSPECIFIED);
+
+      v.measure(widthSpec, heightSpec);
       final int targetHeight = v.getMeasuredHeight();
 
       // Older versions of android (pre API 21) cancel animations for views with a height of 0.
@@ -505,8 +511,6 @@ public class Item {
     }
 
     public void setActive(boolean active, boolean suppress_animation) {
-      ResizeAnimation animation;
-
       if(active) {
         expand(this.contents_controls_view, suppress_animation);
       } else {
